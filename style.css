@@ -1,0 +1,254 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;/* placed in its normal position */
+}
+#navbar{
+    display: flex;/* to make child element in to inline */
+    width: 85%;
+    margin-left: 100px;
+    justify-content: space-between;
+    align-items: center;
+}
+#logo{
+    width: 130px;
+}
+.listitem{
+    list-style: none;
+    display: inline;
+    margin: 10px 20px;
+    font-weight: 800 ;
+}
+li:hover{
+    color: brown;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+#title{
+    margin-top: 13%;
+    margin-left: 8% ;
+}
+#title h1{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#title a{
+    background-color: black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 20px;
+    
+
+}
+#title p{
+    margin-bottom: 8px;
+    margin-top: -2%;
+}
+#link{
+    margin-top: -5px;
+}
+#image{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+
+}
+.figure{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translatex(-50%); 
+    transition: bottom 1s, left 2s;
+}
+#image:hover #shape{
+    bottom: 70px;
+}
+#image:hover #girl{
+    left: 40%;
+}
+#about{
+    margin-top: 20%;
+    margin-left: 5%;
+}
+.heading{
+    text-align: center;
+
+    
+}
+.heading p{
+    color: rgb(6, 248, 6);
+    margin-top: -2px;
+}
+#para{
+    width: 40%;
+    float: right;
+    margin-top: -19%;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: justify;
+    
+}
+#information{
+    float:right;
+    margin-right: 44%;
+    margin-top: -11% ;
+}
+#content_image img{
+    width: 30%;
+}
+.info{
+    margin-top: .5rem;
+}
+.info span{
+    margin-left: .4rem;
+}
+#skills{
+    margin-top: 10%;
+    margin-left: 5%;
+}
+#colum{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+}
+#image_bar img{
+    width: 80%;
+    margin-left: 20%;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+    position: relative;
+}
+#bar-container span{
+    font-weight: 800;
+    font-size: 20px;
+
+}
+.bar{
+    width: 90%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#html_bar{
+    width: 85%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+    
+}
+#css_bar{
+    width: 80%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+
+    
+}
+#react_bar{
+    width: 75%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#node_bar{
+    width: 55%;
+    height: 0.5rem;
+    background-color: orange;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+#last{
+    margin-top: 10%;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+
+}
+.icon,.arrow{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 0px 10px;
+    
+}
+.icon i{
+    color: black;
+    padding: 10px;
+    
+    
+
+    
+}
+.icon:hover{
+    background-image: linear-gradient(to bottom right, red, yellow);
+    animation: shake 0.75s infinite;
+}
+.icon:hover i{
+    color: aliceblue;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+
+    }
+    20%{
+        transform: rotate(-15deg);
+
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+
+    }
+}  
+footer{
+    padding: 3rem 0px;
+}
+footer p{
+    margin-top: 1300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.arrow{
+    float: right;
+    background-image: linear-gradient(to bottom right, red, yellow);
+    animation: shake 0.75s ;
+
+}
+
+
+
+
